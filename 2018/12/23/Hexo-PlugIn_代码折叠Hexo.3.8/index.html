@@ -55,14 +55,18 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="The Wandering Cat&#39;s Mind Palace">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo | Fold your codes">
+<meta property="og:url" content="http://yoursite.com/2018/12/23/Hexo-PlugIn_代码折叠Hexo.3.8/index.html">
 <meta property="og:site_name" content="The Wandering Cat&#39;s Mind Palace">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://warmshawn.oss-cn-beijing.aliyuncs.com/Cartoon/CodeFold_900x300.png?x-oss-process=style/style1">
+<meta property="og:updated_time" content="2019-09-07T16:12:41.915Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Wandering Cat&#39;s Mind Palace">
-  <link rel="canonical" href="http://yoursite.com/archives/2019/">
+<meta name="twitter:title" content="Hexo | Fold your codes">
+<meta name="twitter:image" content="https://warmshawn.oss-cn-beijing.aliyuncs.com/Cartoon/CodeFold_900x300.png?x-oss-process=style/style1">
+  <link rel="canonical" href="http://yoursite.com/2018/12/23/Hexo-PlugIn_代码折叠Hexo.3.8/">
 
 
 <script id="page-configurations">
@@ -70,13 +74,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
-    isArchive: true
+    isArchive: false
   };
 </script>
 
-  <title>Archive | The Wandering Cat's Mind Palace</title>
+  <title>Hexo | Fold your codes | The Wandering Cat's Mind Palace</title>
   
 
 
@@ -203,27 +207,6 @@
 
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 </nav>
 </div>
     </header>
@@ -241,153 +224,146 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        
-        
-        
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/23/Hexo-PlugIn_代码折叠Hexo.3.8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="The Wandering Cat">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/纪田正臣.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="The Wandering Cat's Mind Palace">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Hexo | Fold your codes
+
           
-        
-        <span class="collection-header">Um..! 21 posts in total. Keep on posting.</span>
-      </div>
-      
+        </h1>
 
-      
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
 
-  
-  
+              
+                
+              
 
-  
+              <time title="Created: 2018-12-23 23:11:11" itemprop="dateCreated datePublished" datetime="2018-12-23T23:11:11+08:00">2018-12-23</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-09-08 00:12:41" itemprop="dateModified" datetime="2019-09-08T00:12:41+08:00">2019-09-08</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tech-Q/" itemprop="url" rel="index"><span itemprop="name">Tech - Q</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="https://warmshawn.oss-cn-beijing.aliyuncs.com/Cartoon/CodeFold_900x300.png?x-oss-process=style/style1" alt></div></div></div></div>
+<a id="more"></a>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>有大段的东西想要放上去，但又不想占据大量的位置。折叠是最好的选择。下面在Hexo的主题上添加折叠功能。</p>
+<p>老版本(Hexo.3.2)需要自己手动写js, 现在Hexo.3.8可以直接是使用插件实现。如下</p>
+<h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><div class="spoiler collapsed"><div class="spoiler-title">Code</div><div class="spoiler-content"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">my code</span><br><span class="line">my code</span><br></pre></td></tr></table></figure></div></div>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><pre><code>
+
+代码
+
+</code></pre>
+
+<h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><div class="spoiler collapsed"><div class="spoiler-title">title</div><div class="spoiler-content"><pre><code>
+
+代码
+
+</code></pre></div></div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
-  
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
+    
+    
+    
         
-          <a class="post-title-link" href="/2019/09/06/Hexo-PlugIn_添加pdf/" itemprop="url">
-            <span itemprop="name">Hexo | Adding pdf reader</span>
-          </a>
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+            
+          </div>
         
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-06T02:18:03+08:00"
-              content="2019-09-06">
-          09-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
         
-          <a class="post-title-link" href="/2019/09/06/Hexo-PlugIn_代码显示/" itemprop="url">
-            <span itemprop="name">Hexo|Coding Style</span>
-          </a>
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2018/12/23/Hexo-PlugIn_添加视频播放器/" rel="next" title="Hexo | Adding Videos">
+                  <i class="fa fa-chevron-left"></i> Hexo | Adding Videos
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2019/01/02/Celebration_Changsha-JuziZhou_FireworksofNewYear/" rel="prev" title="Celebration | New Year's Fireworks, Changsha">
+                  Celebration | New Year's Fireworks, Changsha <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
         
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-06T01:52:04+08:00"
-              content="2019-09-06">
-          09-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/03/03/ChinesePoster_GoodGoodStudyDayDayUp/" itemprop="url">
-            <span itemprop="name">ChinesePosters | Good Good Study, Day Day Up</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-03-03T21:07:22+08:00"
-              content="2019-03-03">
-          03-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/01/02/Celebration_Changsha-JuziZhou_FireworksofNewYear/" itemprop="url">
-            <span itemprop="name">Celebration | New Year's Fireworks, Changsha</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-01-02T17:09:06+08:00"
-              content="2019-01-02">
-          01-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-
-    </div>
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-
+  </div>
 
 
           </div>
@@ -406,6 +382,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -418,6 +399,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1"><span class="nav-number">2.</span> <span class="nav-text">1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2"><span class="nav-number">3.</span> <span class="nav-text">2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3"><span class="nav-number">4.</span> <span class="nav-text">3</span></a></li></ol></div>
+        
       </div>
       <!--/noindex-->
 

@@ -55,14 +55,18 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="The Wandering Cat&#39;s Mind Palace">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="查看npm版本1npm -v">
+<meta property="og:type" content="article">
+<meta property="og:title" content="npm命令">
+<meta property="og:url" content="http://yoursite.com/2018/12/18/npm命令/index.html">
 <meta property="og:site_name" content="The Wandering Cat&#39;s Mind Palace">
+<meta property="og:description" content="查看npm版本1npm -v">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-07T13:11:10.583Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Wandering Cat&#39;s Mind Palace">
-  <link rel="canonical" href="http://yoursite.com/archives/2019/">
+<meta name="twitter:title" content="npm命令">
+<meta name="twitter:description" content="查看npm版本1npm -v">
+  <link rel="canonical" href="http://yoursite.com/2018/12/18/npm命令/">
 
 
 <script id="page-configurations">
@@ -70,13 +74,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
-    isArchive: true
+    isArchive: false
   };
 </script>
 
-  <title>Archive | The Wandering Cat's Mind Palace</title>
+  <title>npm命令 | The Wandering Cat's Mind Palace</title>
   
 
 
@@ -203,27 +207,6 @@
 
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 </nav>
 </div>
     </header>
@@ -241,153 +224,133 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        
-        
-        
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/18/npm命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="The Wandering Cat">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/纪田正臣.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="The Wandering Cat's Mind Palace">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">npm命令
+
           
-        
-        <span class="collection-header">Um..! 21 posts in total. Keep on posting.</span>
-      </div>
-      
+        </h1>
 
-      
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
 
-  
-  
+              
+                
+              
 
-  
+              <time title="Created: 2018-12-18 19:13:31" itemprop="dateCreated datePublished" datetime="2018-12-18T19:13:31+08:00">2018-12-18</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-09-07 21:11:10" itemprop="dateModified" datetime="2019-09-07T21:11:10+08:00">2019-09-07</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tech-Q/" itemprop="url" rel="index"><span itemprop="name">Tech - Q</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>查看npm版本<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>查看node.js版本<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure></p>
+<p>安装package<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install PackageName				//局部安装(利用 npm 安装xxx模块到当前命令行所在目录)</span><br><span class="line">npm install --save PackageName		//全局安装(利用npm安装全局模块xxx)</span><br></pre></td></tr></table></figure></p>
+<p>查看已安装Package<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm list		//查看局部安装</span><br><span class="line">npm list -g		//查看全局安装</span><br></pre></td></tr></table></figure></p>
+<p>删除已安装Package<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall PackageName			//删除局部安装</span><br><span class="line">npm uninstall -g PackageName		//删除全局安装</span><br></pre></td></tr></table></figure></p>
+<p>查看依赖库的信息时候报错如下所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm ERR! extraneous</span><br></pre></td></tr></table></figure></p>
+<p>解决方法：<br>安装不需要的软件包，可以清理掉，实际上只是一个警告，因此可以忽略。忽略这个错误可能是安全的。但是你可以用清理不必要的软件包。<br>执行<code>npm prune</code>即可</p>
+<p>新建文件夹D:/Hexo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cd Hexo</span><br><span class="line">npm list</span><br><span class="line">npm list -g</span><br><span class="line">npm install -g hexo-cli</span><br><span class="line">npm install --save hexo-tag-aplayer</span><br><span class="line">npm install --save hexo-tag-dplayer</span><br><span class="line">npm install --save webpack</span><br></pre></td></tr></table></figure></p>
+<p>##添加Hexo主题<br>在终端窗口下，定位到 Hexo 站点目录下。使用 Git checkout 代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> your-hexo-site</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
+<p>在已经生成文章的情况下，改变文章中的内容，刷新，文章跟着被刷新！！！不用再每次修改完都要<code>hexo clean</code>,<code>hexo g</code>,<code>hexo s</code>.</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
-  
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
+    
+    
+    
         
-          <a class="post-title-link" href="/2019/09/06/Hexo-PlugIn_添加pdf/" itemprop="url">
-            <span itemprop="name">Hexo | Adding pdf reader</span>
-          </a>
+      
+
+      <footer class="post-footer">
+
         
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-06T02:18:03+08:00"
-              content="2019-09-06">
-          09-06
-        </time>
-      </div>
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2018/11/29/Hexo-4.发布新页面/" rel="next" title="Hexo-发布新页面">
+                  <i class="fa fa-chevron-left"></i> Hexo-发布新页面
+                </a>
+              
+            </div>
 
-    </header>
-  </article>
+            <span class="post-nav-divider"></span>
 
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2018/12/18/Hexo-PlugIn_Mathjax/" rel="prev" title="Hexo · Math">
+                  Hexo · Math <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
         
-          <a class="post-title-link" href="/2019/09/06/Hexo-PlugIn_代码显示/" itemprop="url">
-            <span itemprop="name">Hexo|Coding Style</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-06T01:52:04+08:00"
-              content="2019-09-06">
-          09-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/03/03/ChinesePoster_GoodGoodStudyDayDayUp/" itemprop="url">
-            <span itemprop="name">ChinesePosters | Good Good Study, Day Day Up</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-03-03T21:07:22+08:00"
-              content="2019-03-03">
-          03-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/01/02/Celebration_Changsha-JuziZhou_FireworksofNewYear/" itemprop="url">
-            <span itemprop="name">Celebration | New Year's Fireworks, Changsha</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-01-02T17:09:06+08:00"
-              content="2019-01-02">
-          01-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-
-    </div>
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-
+  </div>
 
 
           </div>
@@ -406,6 +369,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
